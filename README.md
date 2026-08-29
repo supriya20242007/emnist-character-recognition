@@ -36,7 +36,8 @@ To bridge this gap during real-time inference, the model input pipeline applies:
 
 ### 2. Dynamically Mapped Output Classes
 Model predictions are mapped using an explicit dictionary mapping scheme:
-$$\text{labels\_map} = \{0 \dots 9 \rightarrow \text{'0'} \dots \text{'9'}, \; 10 \dots 35 \rightarrow \text{'A'} \dots \text{'Z'}\}$$
+
+`labels_map = {0...9 -> '0'...'9', 10...35 -> 'A'...'Z'}`
 
 ---
 
@@ -72,9 +73,8 @@ weighted avg       0.89      0.89      0.89     17280
 ### Visualizations
 
 | EMNIST Samples | Model Confusion Matrix |
-| --- | --- |
-|  |  |
-
+| :---: | :---: |
+| ![EMNIST Sample](img2.png) | ![Confusion Matrix](img1.png) |
 ---
 
 ## Setup & Execution
